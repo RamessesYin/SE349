@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GBK"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
+    xmlns:j.0="http://xmlns.com/foaf/0.1/">
+  <rdf:Description rdf:about="http://localhost/author/277258">
+    <j.0:name>Audrey Favache</j.0:name>
+    <j.0:coauthor rdf:about="http://localhost/author/276001"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Author" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost/author/276001">
+    <j.0:name>Denis Dochain</j.0:name>
+    <j.0:count>1</j.0:count>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Coauthor" />
+  </rdf:Description>
+  <rdf:Description rdf:about="http://localhost/journals/automatica/FavacheD10">
+    <dc:title>Power-shaping control of reaction systems: The CSTR case.</dc:title>
+    <rdf:type rdf:resource="http://swrc.ontoware.org/ontology#Article" />
+  </rdf:Description>
+
+</rdf:RDF>
