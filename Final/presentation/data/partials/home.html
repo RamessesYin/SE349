@@ -1,0 +1,52 @@
+  <div class="row"> 
+    <div class="col-xs-1">
+    <p style="font-family:黑体;font-weight:bold;color: #b2b2b2;" align="center">输入名称</p>
+    </div>
+    <div class="col-xs-2">
+                <div class="col-xs-5"><input type="text" class="form-control"  ng-model="selected">
+                 </div>
+            <div class="btn-group" data-toggle="buttons">   
+                  <button class="btn btn-primary" ng-click="select()">确定</button>
+            </div> 
+
+
+    </div>
+<div class="col-xs-9">
+    <div id="main" style="height:600px"></div>
+    <!-- ECharts单文件引入 -->
+</div>
+</div>
+<div class="row">
+&nbsp;
+</div>
+
+<div class="row">
+    <div class="col-xs-1">
+    &nbsp;
+    </div>
+    <div class="col-xs-4">
+        <p style="font-family:黑体;font-weight:bold;color: #b2b2b2;">自身标签</p>
+    </div>
+    <div class="col-xs-3">
+    &nbsp;
+    </div>
+    <div class="col-xs-4" >
+      <p style="font-family:黑体;font-weight:bold;color: #000000;"> 推荐</p>    
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-xs-1">
+    &nbsp;
+    </div>
+    <div class="col-xs-4">
+        <li ng-repeat="item in selftags" style="font-family:黑体;font-weight:bold;color: #b2b2b2;">{{item}}</li>
+        </div>
+    <div class="col-xs-3">
+    &nbsp;
+    </div>
+    <div class="col-xs-4" >
+      <li ng-repeat="item in recom_tag" style="font-family:黑体;font-weight:bold;color: #000000;">{{item}}</li>    
+    </div>
+</div>

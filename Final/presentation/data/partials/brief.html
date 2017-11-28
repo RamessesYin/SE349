@@ -1,0 +1,43 @@
+﻿  <div class="row"> 
+    <div class="col-xs-1">
+    <p style="font-family:黑体;font-weight:bold;color: #b2b2b2;" align="center">选择人物</p>
+    </div>
+    <div class="col-xs-2">
+             <li class="dropdown">
+            <a  class="dropdown-toggle" data-toggle="dropdown">
+                <div class="col-xs-5"><input type="text" class="form-control"  ng-model="selected">
+                 <b class="caret"></b>
+                 </div>
+            </a>
+            <ul class="dropdown-menu" style="height:300px;overflow:scroll" >
+               <li ng-repeat="item in items track by $index"><a ng-click="changeNode(item,$index)">{{item}}</a></li>
+            </ul>
+            <div class="btn-group" data-toggle="buttons">   
+                  <button class="btn btn-primary" ng-click="select()">确定</button>
+            </div> 
+         </li>
+
+
+    </div>
+<div class="col-xs-9">
+    <div id="main" style="height:400px"></div>
+    <!-- ECharts单文件引入 -->
+</div>
+</div>
+<div class="row">
+&nbsp;
+</div>
+
+<div class="row">
+    <div class="col-xs-1">
+    &nbsp;
+    </div>
+    <div class="col-xs-1">
+        <a style="font-family:黑体;font-weight:bold;color: #b2b2b2;" align="center" ng-click="findMore()">查看更多</a>
+    </div>
+    <div class="col-xs-1">
+    </div>
+    <div id="result" class="col-xs-9" >
+      <p style="font-family:黑体;font-weight:bold;color: #000000;">  {{result}}   </p>    
+    </div>
+</div>
